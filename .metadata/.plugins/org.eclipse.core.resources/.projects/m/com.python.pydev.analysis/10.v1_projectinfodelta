@@ -1,0 +1,17 @@
+INSTUPm.microgame
+/Users/student/Documents/mc/m/m/microgame.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&2|7|2|1&&2|8|2|1&&2|9|2|1&&2|10|2|1&&2|11|2|1&&3|4|2|12&&3|6|2|12&&2|13|2|1&&3|4|2|14&&3|6|2|14
+update=9
+stop=8
+finished=4
+winner=6
+win=11
+Microgame.__init__=5
+render=10
+Microgame=1
+lose=13
+__init__=3
+Microgame.win=12
+start=7
+Microgame.lose=14
+m.microgame=2
