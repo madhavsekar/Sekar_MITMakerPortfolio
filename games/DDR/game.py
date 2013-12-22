@@ -99,12 +99,10 @@ class moving_arrow(Sprite):
             
             self.image, self.rect=_load_image(join('games','DDR','DDR_Images','leftreal.png'), x, y)
 
-
         else:
             
             self.image, self.rect=_load_image(join('games','DDR','DDR_Images','upreal.png'), x, y)
 
-            
         self.vx=vx
         self.vy=vy
         self.area=game.rect
@@ -113,50 +111,30 @@ class moving_arrow(Sprite):
     def update(self):
         self.rect=self.rect.move(self.vx,self.vy)
 
-        
-
-        
-
         for event in pygame.event.get():
             if event.type==KEYDOWN or event.type==KEYUP:
+                
                 if event.key==K_LEFT:
-    
-                    
-                    
                     if (self.rect.center[1]-self.game.arrow1.rect.center[1])<=25 and self.direction=='left':
                         self.kill()
-
-
                         
                 elif event.key==K_DOWN:
-
                     if (self.rect.center[1]-self.game.arrow2.rect.center[1])<=25 and self.direction=='down':                          
                         self.kill()
                         
                 elif event.key==K_UP:
-
                     if (self.rect.center[1]-self.game.arrow3.rect.center[1])<=25 and self.direction=='up':
                         self.kill()
                         
-
                 elif event.key==K_RIGHT:
-
                     if (self.rect.center[1]-self.game.arrow4.rect.center[1])<=25 and self.direction=='right':
                         self.kill()
                         
        
         if self.rect.y<10:
-             
             self.game.lose()
         
-                    
-                       
-                    
-                    
                         
-
-            
-
 
 class DDR(Microgame):
 
